@@ -188,8 +188,11 @@ export default function App() {
         <p>Built with pdf-lib · Express · React · Vite</p>
         <p className="footer-credit">
           Made by Tushar Sharma ·
-          <a href="https://www.linkedin.com/in/tushar-sharma-702069305/" target="_blank" rel="noopener noreferrer">
-            <span role="img" aria-label="LinkedIn">🔗</span> LinkedIn
+          <a className="footer-link" href="https://www.linkedin.com/in/tushar-sharma-702069305/" target="_blank" rel="noopener noreferrer">
+            <svg className="footer-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.25 24h4.5V7.5h-4.5V24zm7.5-16.5h4.32v2.25h.06c.6-1.14 2.06-2.34 4.24-2.34 4.54 0 5.38 2.99 5.38 6.88V24h-4.5v-7.13c0-1.7-.03-3.89-2.37-3.89-2.38 0-2.75 1.86-2.75 3.78V24h-4.5V7.5z" />
+            </svg>
+            LinkedIn
           </a>
         </p>
       </footer>
