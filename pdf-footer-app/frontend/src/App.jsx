@@ -186,6 +186,12 @@ export default function App() {
 
       <footer className="site-footer">
         <p>Built with pdf-lib · Express · React · Vite</p>
+        <p className="footer-credit">
+          Made by Tushar Sharma ·
+          <a href="https://www.linkedin.com/in/tushar-sharma-702069305/" target="_blank" rel="noopener noreferrer">
+            <span role="img" aria-label="LinkedIn">🔗</span> LinkedIn
+          </a>
+        </p>
       </footer>
     </div>
   )
