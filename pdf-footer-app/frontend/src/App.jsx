@@ -1,6 +1,8 @@
 import { useState, useRef, useCallback } from 'react'
 import './App.css'
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://footerforge.onrender.com'
+
 export default function App() {
   const [file, setFile] = useState(null)
   const [name, setName] = useState('')
@@ -54,7 +56,7 @@ export default function App() {
     formData.append('enrollmentNumber', enrollment.trim())
 
     try {
-      const res = await fetch('/upload', { method: 'POST', body: formData })
+      const res = await fetch(`${API_BASE_URL}/upload`, { method: 'POST', body: formData })
       if (!res.ok) {
         const data = await res.json().catch(() => ({}))
         throw new Error(data.error || `Server error: ${res.status}`)
